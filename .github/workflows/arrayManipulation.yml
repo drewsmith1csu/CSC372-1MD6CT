@@ -7,7 +7,7 @@ public class arrayManipulation {
 	 * */
 	public static void printArray(ArrayList<Student> rollCall ) {
 		for(int i = 0; i<rollCall.size(); i++) {
-			System.out.println(rollCall.get(i).getName() + ", ID num: " + rollCall.get(i).getNum)
+			System.out.println(rollCall.get(i).getName() + ", ID num: " + rollCall.get(i).getNum()
 					+ ", address: " + rollCall.get(i).getAddy());
 		}
 	}
