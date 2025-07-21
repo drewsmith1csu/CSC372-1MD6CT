@@ -1,0 +1,60 @@
+import java.util.ArrayList;
+
+public class Main extends arrayManipulation{
+
+	public static void main(String[] args) {
+		
+		//This is going to be the arraylist that holds all the students
+		
+		ArrayList<Student> rollCall = new ArrayList<Student>();
+		
+		//This is all the students in the class
+		Student Timmy = new Student("Timmy", "1234 w", 77);
+		Student Kaiden = new Student("Kaiden", "12345 e", 15);
+		Student Bernease = new Student("Bernease", "2312 w", 33);
+		Student Lucas = new Student("Lucas", "3210 e", 405);
+		Student Giovanni = new Student("Giovanni", "4560 N", 1);
+		Student Matte= new Student("Matte", "9876 W", 88);
+		Student Gale = new Student("Gale", "7825 E", 21);
+		Student Will = new Student("Will", "78523 E", 16);
+		Student Jackson = new Student("Jackson", "8995 S", 2);
+		Student Mason = new Student("Mason", "12 S", 45);
+		
+		//Adding all students to the roll call
+		rollCall.add(Timmy);
+		rollCall.add(Kaiden);
+		rollCall.add(Bernease);
+		rollCall.add(Lucas);
+		rollCall.add(Giovanni);
+		rollCall.add(Matte);
+		rollCall.add(Gale);
+		rollCall.add(Will);
+		rollCall.add(Jackson);
+		rollCall.add(Mason);
+		
+		System.out.println("This is the roll call before any sort method");
+		printArray(rollCall);
+		
+		System.out.println("\nThis is the roll call sorted by roll number");
+		sortNum(rollCall);
+		printArray(rollCall);
+		
+		System.out.println("\nThis is the roll call sorted by name");
+		sortName(rollCall);
+		printArray(rollCall);
+		
+		System.out.println("\nThis is the roll call sorted in reverse roll number");
+		reverseSortNum(rollCall);
+		printArray(rollCall);
+		
+		System.out.println("\nThis is the roll call sorted by name in reverse");
+		reverseSortName(rollCall);
+		printArray(rollCall);
+
+		
+
+		
+		
+	}
+
+}
